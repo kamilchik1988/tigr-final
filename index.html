@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ТИГР - Панель управления</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>ТИГР — Панель управления</h1>
+    <div class="tabs">
+      <button onclick="setTab('trading')">Трейдинг</button>
+      <button onclick="setTab('seo')">SEO</button>
+      <button onclick="setTab('assistant')">Ассистент</button>
+    </div>
+  </div>
+
+  <div id="trading" class="content">
+    <h2>Сигналы по криптовалюте</h2>
+    <table>
+      <tr><th>Биржа</th><th>Пара</th><th>Сигнал</th><th>Уровень входа</th><th>Уверенность</th></tr>
+      <tr><td>Bybit</td><td>BTCUSDT</td><td>LONG</td><td>66250</td><td>91%</td></tr>
+      <tr><td>Binance</td><td>ETHUSDT</td><td>SHORT</td><td>3240</td><td>94%</td></tr>
+    </table>
+  </div>
+
+  <div id="seo" class="content" style="display:none;">
+    <h2>SEO Аудит</h2>
+    <p>Сайт: antalya-shop.com</p>
+    <ul>
+      <li>Мета-теги: оптимизировано</li>
+      <li>Контент: нуждается в доработке</li>
+      <li>Изображения: частично сжаты</li>
+    </ul>
+  </div>
+
+  <div id="assistant" class="content" style="display:none;">
+    <h2>Ассистент Кеша</h2>
+    <p>Готов к работе. Задай вопрос или начни новую задачу.</p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
